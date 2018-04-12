@@ -18,7 +18,8 @@ passport.deserializeUser((id, done) => {  // id -> user
 passport.use(new GoogleStrategy({
         clientID: keys.googleClientID,
         clientSecret: keys.googleClientSecret,
-        callbackURL: '/auth/google/callback' //after user granted, we direct him to this url
+        callbackURL: '/auth/google/callback', //after user granted, we direct him to this url
+        proxy: true
     },
     (accessToken, refreshToken, profile, done) => {   //when back to server from google, this callback will run
         User.findOne({googleId: profile.id}).then(existingUser => { //collection query, find the first
