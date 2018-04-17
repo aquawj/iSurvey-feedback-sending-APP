@@ -7,11 +7,12 @@ body {
 .nav-wrapper {
   padding: 0 2%;
   margin-bottom: 2%;
+  height: 200px;
 }
 
 .welcome-pic{
   margin-top: 5%;
-  max-width: 1024px;
+  max-width: 100%;
 }
 
 .brand-logo{
@@ -29,8 +30,16 @@ body {
   border-radius: 5px;
 }
 
+.login-btn:hover{
+  background-color: #9575cd;
+}
+
 .login{
   color: #9575cd;
+}
+
+.login:hover{
+  color: white;
 }
 
 .container{
