@@ -17,7 +17,6 @@ module.exports = (app) => {
 
     app.get('/api/logout', (req, res) => {
         req.logout();
-        res.send(req.user); // to test the user now should be null/not exists
-        //res.redirect('/auth/google'); // to test
+        res.redirect('/');
     });
 };

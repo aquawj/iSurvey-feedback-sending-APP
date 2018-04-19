@@ -12,12 +12,13 @@ class Header extends Component {
             case false: //logged out/ new user
                 return <li><a href='/auth/google'>Login with Google</a></li> ;
             default:  // logged in
-                return(
-                    <div>
-                        <li>Welcome, you are logged in</li>
-                        <li><a href='/api/logout'>Logout</a></li>
-                    </div>
-                );
+                return [
+                    <li key="1"><Payments /></li>,
+                    <li key="3">
+                        Credits: {this.props.auth.credits}
+                    </li>,
+                    <li key="2"><a href="/api/logout">Logout</a></li>
+                ];
         }
     }
     render(){
