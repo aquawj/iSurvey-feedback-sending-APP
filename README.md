@@ -6,12 +6,18 @@ NodeJS/Express, React/Redux, MongoDB,...(to add)
 
 PassportJS, nodemon, Stripe ...(to add)
 
+Heroku
+
 
 Parts finished:
 -
+Google authentication login in server side;
+
+Connected MongoDB to store users;
+
+Seperate develop and production environment;
 
 Parts in process:
 -
-Server side:
-Google Authentication login
-add mongoDB
+client side:
+react

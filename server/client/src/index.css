@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Aaux ProLight";
+}
+
+.nav-wrapper {
+  padding: 0 2%;
+  margin-bottom: 2%;
+  height: 200px;
+}
+
+.welcome-pic{
+  margin-top: 5%;
+  max-width: 100%;
+}
+
+.brand-logo{
+  font-family: "Apple Chancery";
+}
+
+.login-btn{
+  font-family: "Aaux ProLight";
+  margin: 6% 40%;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  background-color: white;
+  border: 1px solid #9575cd;
+  border-radius: 5px;
+}
+
+.login-btn:hover{
+  background-color: #9575cd;
+}
+
+.login{
+  color: #9575cd;
+}
+
+.login:hover{
+  color: white;
+}
+
+.container{
+  color: red;
+  padding-bottom: 1%;
+}
