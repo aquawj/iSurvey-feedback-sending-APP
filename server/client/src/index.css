@@ -46,3 +46,42 @@ body {
   color: red;
   padding-bottom: 1%;
 }
+
+.survey-input{
+  margin-bottom: 5px;
+}
+
+.survey-info{
+  margin-bottom: 20px;
+}
+
+.survey-template{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  color: #9575cd;
+}
+
+h5{
+  color: #616161;
+}
+
+.form-label{
+  font-size: 20px;
+}
+
+.btn{
+  margin-right: 20px;
+}
+
+.btn-flat{
+  margin-top: 1%;
+}
+
+.page-footer{
+  position: fixed;
+  width: 70%;
+  bottom: 2%;
+}
