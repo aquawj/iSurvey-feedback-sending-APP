@@ -1,5 +1,5 @@
-if(process.env.NODE_ENV === 'production'){ // on heroku (production env)
-    module.export = require('./prod');
-}else{ //local machine, return true keys
+if (process.env.NODE_ENV === 'production') {
+    module.exports = require('./prod');
+} else {
     module.exports = require('./dev');
 }
