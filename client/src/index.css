@@ -64,10 +64,6 @@ h3,h5{
   color: #9575cd;
 }
 
-/*h5{
-  color: #616161;
-}*/
-
 .form-label{
   font-size: 20px;
 }
@@ -89,7 +85,7 @@ h3,h5{
   margin-right: 20px;
 }
 
-.btn-flat{
+.form-btn{
   margin-top: 3%;
 }
 

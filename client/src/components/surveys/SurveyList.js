@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchSurveys } from '../../actions';
 
 class SurveyList extends Component {
@@ -23,6 +24,8 @@ class SurveyList extends Component {
                     <div className="card-action">
                         <a>Yes: {survey.yes}</a>
                         <a>No: {survey.no}</a>
+                        <p>{survey._id}</p>
+                        <Link to="/surveys/delete/{survey.id}" className="red btn-flat white-text right">delete</Link>
                     </div>
                 </div>
             );
