@@ -25,7 +25,7 @@ class SurveyList extends Component {
                         <a>Yes: {survey.yes}</a>
                         <a>No: {survey.no}</a>
                         <p>{survey._id}</p>
-                        <Link to="/surveys/delete/{survey.id}" className="red btn-flat white-text right">delete</Link>
+                        <Link to={"/surveys/delete/" + survey._id} className="red btn-flat white-text right">delete</Link>
                     </div>
                 </div>
             );
