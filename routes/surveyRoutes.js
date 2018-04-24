@@ -19,10 +19,9 @@ module.exports = app => {
     });
 
 
-    app.delete('/surveys/delete/:surveyId', requireLogin, async (req, res) =>{
-        const delSurvey=await Survey.remove({
-            _id: req.params.surveyId
-        });
+    app.post('/surveys/delete/:surveyId', requireLogin, async (req, res) =>{
+        console.log("surveyRoutes delete");
+        const delSurvey=await Survey.findByIdAndRemove(req.params.surveyId);
         console.log(delSurvey);
         res.redirect('/surveys');
     });
