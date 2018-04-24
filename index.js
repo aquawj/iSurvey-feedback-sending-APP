@@ -4,8 +4,8 @@ const keys = require('./config/keys');
 const bodyParser = require('body-parser');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-require('./models/User'); //model definition first, then passport
-require('./services/passport'); //no return, so no need to assign it to const variable
+require('./models/User');
+require('./services/passport');
 require('./models/Survey');
 
 mongoose.Promise = global.Promise;
@@ -14,7 +14,7 @@ mongoose.connect(keys.mongoURI);
 const app = express();
 app.use(bodyParser.json());
 app.use(cookieSession({
-    maxAge: 30*24*60*60*1000,  //automatically expire after it
+    maxAge: 30*24*60*60*1000,
     keys: [keys.cookieKey] //encrypt user id
 }));
 
@@ -25,7 +25,7 @@ require('./routes/authRoutes')(app); // require and call immediately
 require('./routes/billingRoutes')(app);
 require('./routes/surveyRoutes')(app);
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') { // in production environment
     app.use(express.static('client/build'));
     const path = require('path');
     app.get('*', (req, res) => {

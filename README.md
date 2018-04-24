@@ -34,7 +34,7 @@ use your own email address as recipient(in fact, it should be a list of customer
 -Show your survey history: you can review all your created surveys here with summary of 
 customer's feedback (like how many hits; how many positive/negative feedbacks)
 
-ech stack:
+tech stack:
 -
 NodeJS/Express, React/Redux, MongoDB/Mongoose
 
