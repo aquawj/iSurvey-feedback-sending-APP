@@ -22,7 +22,6 @@ class Header extends Component {
         }
     }
     render(){
-        console.log(this.props);
         return (
             <div>
                 <nav>
@@ -39,12 +38,6 @@ class Header extends Component {
     }
 }
 
-/*function mapStateToProps(state){
-    return {
-        auth: state.auth
-    };
-}*/
-//the same with above
 function mapStateToProps({auth}){
     return {auth};
 }

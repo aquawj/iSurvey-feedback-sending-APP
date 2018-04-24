@@ -2,14 +2,6 @@ import axios from 'axios';
 import { FETCH_USER, FETCH_SURVEYS } from './types';
 
 export const fetchUser = () =>
-    /*return function(dispatch){
-        fetch('/api/current_user')
-            .then(res => dispatch({  //action(object)
-                type: FETCH_USER,
-                payload: res.data
-            }
-        ));
-    };*/
     async dispatch => {
         const res = await axios.get('/api/current_user');
         dispatch({
@@ -36,14 +28,14 @@ export const submitSurvey = (values, history) => async dispatch => {
     });
 };
 
-export const deleteSurvey = (surveyId) => async dispatch => {
-    const res = await axios.delete('/surveys/delete/'+ surveyId);
+/*export const deleteSurvey = (surveyId) => async dispatch => {
+    const res = await axios.delete('/surveys/delete/'+surveyId);
     dispatch({
         type: FETCH_SURVEYS,
         payload: res.data
     });
     console.log(res);
-};
+};*/
 
 export const fetchSurveys = () => async dispatch => {
     const res = await axios.get('/api/surveys');

@@ -19,12 +19,10 @@ module.exports = app => {
     });
 
 
-    app.post('/surveys/delete/:surveyId', requireLogin, async (req, res) =>{
-        console.log("surveyRoutes delete");
+    /*app.delete('/surveys/delete/:surveyId', requireLogin, async (req, res) =>{
         const delSurvey=await Survey.findByIdAndRemove(req.params.surveyId);
-        console.log(delSurvey);
         res.redirect('/surveys');
-    });
+    });*/
 
     app.get('/api/surveys/:surveyId/:choice', (req, res) => {
         res.send('Thanks for your feedback!');
